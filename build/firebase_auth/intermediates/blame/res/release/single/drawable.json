@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_disabled.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_auth\\intermediates\\res\\merged\\release\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\2e5638bed15b6bfaa16c1fcaf1bdb6de\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    }
+]

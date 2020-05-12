@@ -24,6 +24,14 @@ dependencies:
   shared_preferences_macos:
   shared_preferences_web:
   http: ^0.12.0+4
+  google_sign_in:
+  firebase_auth:
+  firebase_core:
+  firebase_database:
+  flutter_signin_button:
+  google_fonts:
+  provider: 
+  intl:
 
   # Required for MediaRecorder example
   path_provider:
@@ -46,8 +54,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
+  assets:
+   - images/pers.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,0 +1,82 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_core\\intermediates\\res\\merged\\release\\values-si\\values-si.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\values-si\\values-si.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "303",
+                        "endColumns": "100",
+                        "endOffsets": "399"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\80400e6f7135f6d13d5282b979aa4f9d\\res\\values-si\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "197",
+                        "endOffsets": "444"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "197",
+                        "endOffsets": "298"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\firebase_core\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-si\\values-si.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\values-si\\values-si.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "303",
+                        "endColumns": "100",
+                        "endOffsets": "399"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\80400e6f7135f6d13d5282b979aa4f9d\\res\\values-si\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "197",
+                        "endOffsets": "444"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "197",
+                        "endOffsets": "298"
+                    }
+                }
+            ]
+        }
+    ]
+}

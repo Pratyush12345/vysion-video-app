@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\path_provider_macos\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\path_provider_macos\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\path_provider_macos\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\path_provider_macos\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\path_provider_macos\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\path_provider_macos\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Pratyush\\.gradle\\caches\\transforms-2\\files-2.1\\ca0d7f524aa490be2a9387ebfca61dfd\\res\\layout\\notification_action_tombstone.xml"
+    }
+]

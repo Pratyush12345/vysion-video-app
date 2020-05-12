@@ -8,7 +8,7 @@ const RESOURCES = {
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "index.html": "586ceada6c8fe349bd345099af0715d8",
 "/": "586ceada6c8fe349bd345099af0715d8",
-"main.dart.js": "29d0ba8baeaafc2571a2e2396637148d"
+"main.dart.js": "ec5fa9a2dc2d8eee2e583afc55126cf0"
 };
 
 self.addEventListener('activate', function (event) {

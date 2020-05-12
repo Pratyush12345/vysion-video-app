@@ -1,6 +1,9 @@
+import 'dart:collection';
 import 'dart:convert';
 import 'dart:async';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter_webrtc/webrtc.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'random_string.dart';
 
@@ -35,7 +38,9 @@ typedef void DataChannelCallback(RTCDataChannel dc);
 class Signaling {
   JsonEncoder _encoder = new JsonEncoder();
   JsonDecoder _decoder = new JsonDecoder();
-  String _selfId = randomNumeric(6);
+  String _selfId;
+  String _currentUser;
+  var _imageurl;
   SimpleWebSocket _socket;
   var _sessionId;
   var _host;
@@ -54,6 +59,8 @@ class Signaling {
   OtherEventCallback onPeersUpdate;
   DataChannelMessageCallback onDataChannelMessage;
   DataChannelCallback onDataChannel;
+  final dbRef=FirebaseDatabase.instance.reference();
+  LinkedHashMap<dynamic, dynamic> _detail=LinkedHashMap<dynamic,dynamic>();
 
   Map<String, dynamic> _iceServers = {
     'iceServers': [
@@ -93,6 +100,8 @@ class Signaling {
   };
 
   Signaling(this._host);
+   
+  
 
   close() {
     if (_localStream != null) {
@@ -121,9 +130,10 @@ class Signaling {
 
     _createPeerConnection(peer_id, media, use_screen).then((pc) {
       _peerConnections[peer_id] = pc;
-      if (media == 'data') {
-        _createDataChannel(peer_id, pc);
-      }
+      // if (media == 'data') {
+      //   _createDataChannel(peer_id, pc);
+      // }
+      _createDataChannel(peer_id, pc);
       _createOffer(peer_id, pc, media);
     });
   }
@@ -133,6 +143,38 @@ class Signaling {
       'session_id': this._sessionId,
       'from': this._selfId,
     });
+  }
+  void checkPeer(String peerId){
+    _send('checkPeer', {
+      'id': peerId
+    });
+  }
+
+  void mutevideo(value){
+    var videotracks= _localStream.getVideoTracks();
+    if(value){ 
+    if(videotracks.length>0){
+    videotracks[0].enabled=false;
+    }
+   }
+   else{
+    if(videotracks.length>0){
+    videotracks[0].enabled=true;
+    }
+   }
+  }
+   void muteaudio(value){
+    var audiotracks= _localStream.getAudioTracks();
+    if(value){ 
+    if(audiotracks.length>0){
+    audiotracks[0].enabled=false;
+    }
+   }
+   else{
+    if(audiotracks.length>0){
+    audiotracks[0].enabled=true;
+    }
+   }
   }
 
   void onMessage(message) async {
@@ -270,7 +312,29 @@ class Signaling {
     }
   }
 
+  Future<String> getSelfId() async{
+        SharedPreferences _pref = await SharedPreferences.getInstance();
+        String id=_pref.getString('MessageId');
+        return id;
+    }
+
   void connect() async {
+    getSelfId().then((value) {
+      
+      _selfId=value;
+      print('//////////////$value////////');
+      dbRef.child('Users').orderByChild('MessagesId').equalTo(_selfId).once().then((DataSnapshot snapshot) {
+    print('//////////////$snapshot?????');  
+    print('///${snapshot.key}');
+    print('///${snapshot.value}');
+    _detail=snapshot.value;
+    _detail.values.forEach((element) {
+      _currentUser=element['Name'];
+      _imageurl=element['PhotoUrl']??null;
+    });
+    });
+
+      });
     var url=_host;
     //var url = 'https://$_host:$_port/ws';
     _socket = SimpleWebSocket(url);
@@ -304,8 +368,10 @@ class Signaling {
       this?.onStateChange(SignalingState.ConnectionOpen);
       _send('new', { 
         'name': DeviceInfo.label,
-        'id': _selfId,
-        'user_agent': DeviceInfo.userAgent
+        'id':  _selfId,
+        'user_agent': DeviceInfo.userAgent,
+        'currentUser' : _currentUser,
+        'imageUrl':  _imageurl
       });
     };
 
@@ -340,6 +406,8 @@ class Signaling {
       }
     };
 
+    
+
     MediaStream stream = user_screen
         ? await navigator.getDisplayMedia(mediaConstraints)
         : await navigator.getUserMedia(mediaConstraints);
@@ -355,7 +423,7 @@ class Signaling {
     if (media != 'data') pc.addStream(_localStream);
     pc.onIceCandidate = (candidate) {
       _send('candidate', {
-        'to': id,
+        'to': id, 
         'from': _selfId,
         'candidate': {
           'sdpMLineIndex': candidate.sdpMlineIndex,
@@ -370,7 +438,7 @@ class Signaling {
 
     pc.onAddStream = (stream) {
       if (this.onAddRemoteStream != null) this.onAddRemoteStream(stream);
-      //_remoteStreams.add(stream);
+      //_remoteStreams.add(stream); 
     };
 
     pc.onRemoveStream = (stream) {

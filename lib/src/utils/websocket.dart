@@ -13,12 +13,14 @@ class SimpleWebSocket {
   OnOpenCallback onOpen;
   OnMessageCallback onMessage; 
   OnCloseCallback onClose;
-  SimpleWebSocket(this._url);
+  SimpleWebSocket(this._url){
+    _url = _url.replaceAll('https:', 'wss:');
+  }
 
   connect() async {
     try {
-      //_socket = await WebSocket.connect(_url);
-      _socket = await _connectForSelfSignedCert(_url);
+      _socket = await WebSocket.connect(_url);
+     // _socket = await _connectForSelfSignedCert(_url);
       this?.onOpen();
       _socket.listen((data) {
         this?.onMessage(data);
@@ -57,13 +59,14 @@ class SimpleWebSocket {
       HttpClientRequest request = await client.getUrl(Uri.parse(url)); // form the correct url here
       request.headers.add('Connection', 'Upgrade');
       request.headers.add('Upgrade', 'websocket');
+      request.headers.add('Sec-WebSocket-Protocol', 'chat');
       request.headers.add(
           'Sec-WebSocket-Version', '13'); // insert the correct version here
       request.headers.add('Sec-WebSocket-Key', key.toLowerCase());
 
       HttpClientResponse response = await request.close();
       Socket socket = await response.detachSocket();
-      var webSocket = WebSocket.fromUpgradedSocket(
+      var webSocket = WebSocket.fromUpgradedSocket( 
         socket,
         protocol: 'signaling',
         serverSide: false,

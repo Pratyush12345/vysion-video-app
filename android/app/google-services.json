@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "774746785308",
+    "firebase_url": "https://videortc-50b58.firebaseio.com",
+    "project_id": "videortc-50b58",
+    "storage_bucket": "videortc-50b58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774746785308:android:c34f50aacb02bae71f81d9",
+        "android_client_info": {
+          "package_name": "com.cloudwebrtc.flutterwebrtcdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774746785308-63b54cd1o51dg3js9l5ouks6e66pt5tc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cloudwebrtc.flutterwebrtcdemo",
+            "certificate_hash": "e02dc6ac116720085be8c672bf7c47ac7495748f"
+          }
+        },
+        {
+          "client_id": "774746785308-ki00q1olr2n1l9pqc1gjgte02tvd9vr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-kb60xR4GZfPZcAMfyqhcdoaH-4SHJws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774746785308-ki00q1olr2n1l9pqc1gjgte02tvd9vr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,12 @@
 # This is a generated file; do not edit or check into version control.
+firebase_auth=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_auth-0.16.0\\
+firebase_auth_web=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_auth_web-0.1.2\\
+firebase_core=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core-0.4.4+3\\
+firebase_core_web=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core_web-0.1.1+2\\
+firebase_database=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_database-3.1.5\\
 flutter_webrtc=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_webrtc-0.2.8\\
+google_sign_in=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\google_sign_in-4.4.4\\
+google_sign_in_web=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\google_sign_in_web-0.9.1\\
 path_provider=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider-1.6.7\\
 path_provider_macos=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_macos-0.0.4+1\\
 shared_preferences=C:\\src\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-0.5.7\\
