@@ -1,4 +1,4 @@
-#Sun May 10 21:46:14 IST 2020
+#Tue May 19 03:28:05 IST 2020
 base.0=C\:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -104,7 +104,7 @@ class _FeaturesPageState extends State<FeaturesPage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (BuildContext context) => HomePage(_selfId)));
+                        builder: (BuildContext context) => HomePage()));
               },
               child: Container(
                 width: MediaQuery.of(context).size.width,

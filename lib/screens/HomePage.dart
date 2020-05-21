@@ -6,16 +6,17 @@ import 'package:flutter_webrtc_demo/Authentication/User.dart';
 import 'package:flutter_webrtc_demo/src/basic_sample/basic_sample.dart';
 import 'package:flutter_webrtc_demo/src/call_sample/call_sample.dart';
 import 'package:flutter_webrtc_demo/src/call_sample/data_channel_sample.dart';
+import 'package:flutter_webrtc_demo/src/call_sample/video_call.dart';
 import 'package:flutter_webrtc_demo/src/route_item.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_webrtc_demo/Modal/SmallMessage.dart';
 import 'dart:convert';
 class HomePage extends StatefulWidget {
-  String selfId;
-  HomePage(this.selfId);
+  //String selfId;
+  HomePage();
   @override
-  _HomePageState createState() => _HomePageState(selfId);
+  _HomePageState createState() => _HomePageState();
 }
 
 enum DialogDemoAction {
@@ -23,8 +24,8 @@ enum DialogDemoAction {
   connect,
 }
 class _HomePageState extends State<HomePage> {
-   String selfId;
-  _HomePageState(this.selfId);
+  // String selfId;
+  _HomePageState();
   List<RouteItem> items;
   String _server = '';
   SharedPreferences _prefs;
@@ -37,33 +38,33 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     _initData();
     _initItems();
-    getSelfId().then((value) {
-      selfId=value;
-      print('//////////////$value?????');
-      print('//////////////$selfId?????');
-      getDetail(selfId).then((value) {
-      print('//////$value');
-      });
+    // getSelfId().then((value) {
+    //   selfId=value;
+    //   print('//////////////$value?????');
+    //   print('//////////////$selfId?????');
+    //   getDetail(selfId).then((value) {
+    //   print('//////$value');
+    //   });
 
-      });
+    //   });
       
   }
-  Future<LinkedHashMap<dynamic, dynamic>> getDetail(String _selfId) async{
+  // Future<LinkedHashMap<dynamic, dynamic>> getDetail(String _selfId) async{
    
-    LinkedHashMap<dynamic, dynamic> _detail=LinkedHashMap<dynamic,dynamic>();
-    await dbRef.child('Users').orderByChild('MessagesId').equalTo(_selfId).once().then((DataSnapshot snapshot) {
-    print('//////////////$snapshot?????');  
-    print('///${snapshot.key}');
-    print('///${snapshot.value}');
-    _detail=snapshot.value;
-    });
-   return _detail;  
-  }
-  Future<String> getSelfId() async{
-        SharedPreferences _pref = await SharedPreferences.getInstance();
-        String id=_pref.getString('MessageId');
-        return id;
-    }
+  //   LinkedHashMap<dynamic, dynamic> _detail=LinkedHashMap<dynamic,dynamic>();
+  //   await dbRef.child('Users').orderByChild('MessagesId').equalTo(_selfId).once().then((DataSnapshot snapshot) {
+  //   print('//////////////$snapshot?????');  
+  //   print('///${snapshot.key}');
+  //   print('///${snapshot.value}');
+  //   _detail=snapshot.value;
+  //   });
+  //  return _detail;  
+  // }
+  // Future<String> getSelfId() async{
+  //       SharedPreferences _pref = await SharedPreferences.getInstance();
+  //       String id=_pref.getString('MessageId');
+  //       return id;
+  //   }
 
 
   _buildRow(context, item) {
@@ -126,10 +127,10 @@ class _HomePageState extends State<HomePage> {
               context,
               MaterialPageRoute(
                   builder: (BuildContext context) => _datachannel
-                      ? DataChannelSample(ip: _server, messageId: selfId,)
+                      ? DataChannelSample(ip: _server,)
                       : ChangeNotifierProvider<SmallMessages>(
                         create: (context)=> SmallMessages(),
-                        child: CallSample(ip: "https://socket-video-server.herokuapp.com", messageId: selfId)
+                        child: CallSample(ip: "https://socket-video-server.herokuapp.com")
                         )));
           }),
       RouteItem(
@@ -142,9 +143,24 @@ class _HomePageState extends State<HomePage> {
               context,
               MaterialPageRoute(
                   builder: (BuildContext context) => _datachannel
-                      ? DataChannelSample(ip: "https://socket-video-server.herokuapp.com", messageId: selfId)
-                      : CallSample(ip: "https://socket-video-server.herokuapp.com", messageId: selfId)));
+                      ? DataChannelSample(ip: "ws://localhost:1234")
+                      : CallSample(ip: "https://socket-video-server.herokuapp.com")));
           }),
+
+      RouteItem(
+          title: 'Video Conferencing',
+          subtitle: 'P2P Call Sample.',
+          push: (BuildContext context) {
+            
+           Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (BuildContext context) => 
+                       ChangeNotifierProvider<SmallMessages>(
+                        create: (context)=> SmallMessages(),
+                        child: VideoSample(ip: "ws://localhost:1234")
+                        )));
+          })    
     ];
   }
 }

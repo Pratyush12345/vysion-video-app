@@ -5,6 +5,29 @@
     <title>Flutter WebRTC Demo</title>
 </head>
 <body>
+    
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDxpNMVzbicyiezBTn0webgtbc7E7SO1XI",
+    authDomain: "videortc-50b58.firebaseapp.com",
+    databaseURL: "https://videortc-50b58.firebaseio.com",
+    projectId: "videortc-50b58",
+    storageBucket: "videortc-50b58.appspot.com",
+    messagingSenderId: "774746785308",
+    appId: "1:774746785308:web:0bf112d3feb9bd7f1f81d9",
+    measurementId: "G-7L57GE349E"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>

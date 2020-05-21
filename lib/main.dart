@@ -16,18 +16,25 @@ void main() => runApp(new MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (BuildContext context)=> SmallMessages()),
-        StreamProvider<User>.value(value: FireBaseAuth().user)
-      ],
-          child: MaterialApp(
-        home: Wrapper(),
+    // return MultiProvider(
+    //   providers: [
+    //     ChangeNotifierProvider(create: (BuildContext context)=> SmallMessages()),
+    //     StreamProvider<User>.value(value: FireBaseAuth().user)
+    //   ],
+    //       child: MaterialApp(
+    //     home: Wrapper(),
+    //     debugShowCheckedModeBanner: false,
+    //     theme: ThemeData(
+    //       primarySwatch: Colors.blue
+    //     )
+    //   ),
+    // );
+    return MaterialApp(
+      home: HomePage(),
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.blue
         )
-      ),
     );
   }
 }

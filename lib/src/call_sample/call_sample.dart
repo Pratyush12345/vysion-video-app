@@ -262,7 +262,7 @@ class _CallSampleState extends State<CallSample> {
       decoration: BoxDecoration(
         color: isMe ? Color.fromRGBO(227, 174, 230, 1) : Color(0xFFFFEFEE),
         borderRadius: isMe
-            ? BorderRadius.only(
+            ? BorderRadius.only( 
                 topLeft: Radius.circular(30.0),
                 bottomLeft: Radius.circular(30.0))
             : BorderRadius.only(
@@ -329,7 +329,7 @@ class _CallSampleState extends State<CallSample> {
                 ),
               ),
             ),
-            IconButton(
+            IconButton( 
               icon: Icon(Icons.send),
               iconSize: 25.0,
               color: Theme.of(context).primaryColor,

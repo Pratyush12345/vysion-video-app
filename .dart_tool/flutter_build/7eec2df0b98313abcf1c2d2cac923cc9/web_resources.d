@@ -1,0 +1,1 @@
+ build\\web\\index.html:  C:\\Users\\Pratyush\\Desktop\\Vysion\\flutterweb\\VConf-master\\web\\index.html

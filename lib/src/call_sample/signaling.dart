@@ -319,22 +319,7 @@ class Signaling {
     }
 
   void connect() async {
-    getSelfId().then((value) {
       
-      _selfId=value;
-      print('//////////////$value////////');
-      dbRef.child('Users').orderByChild('MessagesId').equalTo(_selfId).once().then((DataSnapshot snapshot) {
-    print('//////////////$snapshot?????');  
-    print('///${snapshot.key}');
-    print('///${snapshot.value}');
-    _detail=snapshot.value;
-    _detail.values.forEach((element) {
-      _currentUser=element['Name'];
-      _imageurl=element['PhotoUrl']??null;
-    });
-    });
-
-      });
     var url=_host;
     //var url = 'https://$_host:$_port/ws';
     _socket = SimpleWebSocket(url);
@@ -370,8 +355,8 @@ class Signaling {
         'name': DeviceInfo.label,
         'id':  _selfId,
         'user_agent': DeviceInfo.userAgent,
-        'currentUser' : _currentUser,
-        'imageUrl':  _imageurl
+        'currentUser': _currentUser,
+        'imageUrl': _imageurl
       });
     };
 
@@ -388,6 +373,7 @@ class Signaling {
       }
     };
 
+    
     await _socket.connect();
   }
 
@@ -418,7 +404,11 @@ class Signaling {
   }
 
   _createPeerConnection(id, media, user_screen) async {
+    print(';;;;;;;;;;;;;;;;;;;;;;;;;]]]]]]]]]]]]]]]]]]]]]]]]]]]pppppppppppppppppppppppppppppppppp');
     if (media != 'data') _localStream = await createStream(media, user_screen);
+    print('/////in create function $_localStream..................');
+    print(';;;;;;;;;;;;;;;;;;;;;;;;;]]]]]]]]]]]]]]]]]]]]]]]]]]]');
+    //_sendStream(_localStream);
     RTCPeerConnection pc = await createPeerConnection(_iceServers, _config);
     if (media != 'data') pc.addStream(_localStream);
     pc.onIceCandidate = (candidate) {
@@ -510,5 +500,9 @@ class Signaling {
     request["type"] = event;
     request["data"] = data;
     _socket.send(_encoder.convert(request));
+    
   }
+  // _sendStream(stream){
+  //   _socket.sendStream(stream);
+  // }
 }

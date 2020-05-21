@@ -21,6 +21,8 @@ class SimpleWebSocket {
     try {
       _socket = await WebSocket.connect(_url);
      // _socket = await _connectForSelfSignedCert(_url);
+
+     
       this?.onOpen();
       _socket.listen((data) {
         this?.onMessage(data);
@@ -35,7 +37,15 @@ class SimpleWebSocket {
   send(data) {
     if (_socket != null) {
       _socket.add(data);
+      
       print('send: $data');
+    }
+  }
+  sendStream(stream){
+    if (_socket != null) {
+      _socket.add(stream);
+      
+      print('send: $stream');
     }
   }
 
@@ -43,6 +53,7 @@ class SimpleWebSocket {
     if (_socket != null)
       _socket.close();
   }
+
 
   Future<WebSocket> _connectForSelfSignedCert(url) async {
     print(url);

@@ -1,1 +1,33 @@
-2020/05/10-13:14:14.698 19f8 Reusing MANIFEST C:\Users\Pratyush\AppData\Local\Temp\flutter_tools_chrome_device.fe2726cc-9291-11ea-a1c9-aced5c475249\Default\Local Storage\leveldb/MANIFEST-000001
+2020/05/19-11:20:32.329 1ad4 Reusing MANIFEST C:\Users\Pratyush\AppData\Local\Temp\flutter_tools_chrome_device.9b183b42-9994-11ea-a1ca-107d1a2cf249\Default\Local Storage\leveldb/MANIFEST-000001
+2020/05/19-11:20:32.330 1ad4 Recovering log #3
+2020/05/19-11:20:32.330 1ad4 Reusing old log C:\Users\Pratyush\AppData\Local\Temp\flutter_tools_chrome_device.9b183b42-9994-11ea-a1ca-107d1a2cf249\Default\Local Storage\leveldb/000003.log 
+2020/05/19-18:02:14.850 33b4 Level-0 table #5: started
+2020/05/19-18:02:15.267 33b4 Level-0 table #5: 59736 bytes OK
+2020/05/19-18:02:15.514 33b4 Delete type=0 #3
+2020/05/19-18:06:19.392 33b4 Level-0 table #7: started
+2020/05/19-18:06:19.588 33b4 Level-0 table #7: 245723 bytes OK
+2020/05/19-18:06:19.626 33b4 Delete type=0 #4
+2020/05/19-19:58:27.701 33b4 Level-0 table #9: started
+2020/05/19-19:58:27.985 33b4 Level-0 table #9: 64735 bytes OK
+2020/05/19-19:58:28.062 33b4 Delete type=0 #6
+2020/05/20-00:11:46.940 33b4 Level-0 table #11: started
+2020/05/20-00:11:46.987 33b4 Level-0 table #11: 31481 bytes OK
+2020/05/20-00:11:47.038 33b4 Delete type=0 #8
+2020/05/20-22:55:34.749 33b4 Level-0 table #13: started
+2020/05/20-22:55:34.829 33b4 Level-0 table #13: 13308 bytes OK
+2020/05/20-22:55:34.928 33b4 Delete type=0 #10
+2020/05/20-23:48:09.917 33b4 Level-0 table #15: started
+2020/05/20-23:48:09.991 33b4 Level-0 table #15: 16648 bytes OK
+2020/05/20-23:48:10.041 33b4 Delete type=0 #12
+2020/05/20-23:48:10.041 33b4 Compacting 4@0 + 1@1 files
+2020/05/20-23:48:10.090 33b4 Generated table #16@0: 115 keys, 99521 bytes
+2020/05/20-23:48:10.090 33b4 Compacted 4@0 + 1@1 files => 99521 bytes
+2020/05/20-23:48:10.129 33b4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/05/20-23:48:10.129 33b4 Delete type=2 #7
+2020/05/20-23:48:10.130 33b4 Delete type=2 #9
+2020/05/20-23:48:10.130 33b4 Delete type=2 #11
+2020/05/20-23:48:10.130 33b4 Delete type=2 #13
+2020/05/20-23:48:10.130 33b4 Delete type=2 #15
+2020/05/21-02:18:13.344 33b4 Level-0 table #18: started
+2020/05/21-02:18:13.453 33b4 Level-0 table #18: 19542 bytes OK
+2020/05/21-02:18:13.568 33b4 Delete type=0 #14
